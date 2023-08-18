@@ -5,14 +5,10 @@ function About() {
       <div>
           my name is devesh kumar kushwaha
           about
-        <div className="shopping-list">
-          <h1>Shopping List for </h1>
-            <ul>
-              <li>Instagram</li>
-              <li>WhatsApp</li>
-              <li>Oculus</li>
-            </ul>
-        </div>
+      <div className="flex justify-end flex-1 text-white">
+        To leverage my skills as a competitive programmer while working in a
+        development-focused environment.
+      </div>
       </div>
       
   )

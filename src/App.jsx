@@ -7,28 +7,31 @@ import Resume from './component/resume';
 import Footer from './component/footer';
 
 
-
 import {
   BrowserRouter as Router,
   Switch,
   Route,
   Link,
   BrowserRouter,
+  Redirect,
   Routes
 } from "react-router-dom";
 import About from './component/about';
+import Sidebar from './component/sidebar';
 
 function App() {
   return (
-    <>
+    <div className=''>
       <BrowserRouter>
         <div className='dev bg-black-gradient'>
-          <div>
+          <div className=' bg-stone-800 '>
             <Header />
           </div>
-          <div className='block grow'>
+          <div className=''>
             <Routes>
               <Route index element={<Home />} />
+              <Route path="/" element={<Home />} />
+              {/* <Route path="/my-app" element={<Home />} /> */}
               <Route path="/home" element={<Home />} />
               <Route path="/about" element={<About />} />
               <Route path="/resume" element={<Resume />} />
@@ -39,7 +42,7 @@ function App() {
           </div>
         </div>
       </BrowserRouter>
-    </>
+    </div>
   );
 }
 

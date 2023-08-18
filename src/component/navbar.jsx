@@ -21,19 +21,19 @@ const Header = () => {
   const [toggle, setToggle] = useState(false);
   return (
     <div className="flex bg-slate-500">
-      <div className='flex font-extrabold justify-start  w-[90px] animate  feature-card py-5 px-5 font-[30px]'>
+      <div className=' px-3 rounded-xl mx-3 my-3 flex text-right w-[90px] justify-center items-center  font-[50px] '>
         {/* <img src={design} alt="design" className="w-[90px] h-[80px] " /> */}
-        <h1>Devesh</h1>
+        <Link className=" px-3 py-3 bg-slate-700 rounded-lg hover:scale-125 ease-out  duration-300" to="/home">devesh</Link>
       </div>
       <nav
         className=" w-full flex  justify-end space-x-7 
         items-center navbar h-20 text-lg px-4"
       >
-        <div className="hidden sm:flex  space-x-3 ">
-          <Link to="/about">about</Link>
-          <Link to="/home">home</Link>
-          <Link to="/contact">contact</Link>
-          <Link to="/resume">resume</Link>
+        <div className="hidden sm:flex  space-x-5 ">
+          <Link className=" px-3 py-3 bg-slate-700 rounded-lg hover:scale-125 ease-out  duration-300" to="/about">about</Link>
+          <Link className=" px-3 py-3 bg-slate-700 rounded-lg hover:scale-125 ease-out  duration-300" to="/home">home</Link>
+          <Link className=" px-3 py-3 bg-slate-700 rounded-lg hover:scale-125 ease-out  duration-300" to="/contact">contact</Link>
+          <Link className=" px-3 py-3 bg-slate-700 rounded-lg hover:scale-125 ease-out  duration-300" to="/resume">resume</Link>
         </div>
         <div
           className="sm:hidden flex flex-1 justify-end
